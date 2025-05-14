@@ -1,0 +1,5 @@
+hash-format = "sha256"
+
+[[files]]
+file = "compose.yml"
+hash = "99d9e904f0d946ef837dab07b45eaef995aa1b54d4bbe8887f498f351ee6a548"

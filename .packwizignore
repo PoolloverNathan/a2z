@@ -1,0 +1,10 @@
+.dockerignore
+.envrc
+.github/
+.gitmodules
+Dockerfile
+compose.yml
+dedicated-server/
+docker-bake.hcl
+flake.*
+result*
