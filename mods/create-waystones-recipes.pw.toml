@@ -1,0 +1,16 @@
+filename = 'create_waystones_recipes-1.0.1.b.jar'
+name = 'Create Waystones Recipes'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'e250d5b8c340d5c9ae69276d5ace33421ca4f0b8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5755099
+project-id = 1086710

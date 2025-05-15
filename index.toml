@@ -1,5 +1,436 @@
 hash-format = "sha256"
 
 [[files]]
-file = "compose.yml"
-hash = "99d9e904f0d946ef837dab07b45eaef995aa1b54d4bbe8887f498f351ee6a548"
+file = "mods/altorigingui.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/applied-energistics-2.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/applied-mekanistics.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/aquaculture-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/aquaculture.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/aquamirae-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/artifacts.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/botarium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/caelus.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/copycats.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/corgilib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-crystal-clear.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-origins-compat.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-stuff-additions.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-waystones-recipes.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-wizardry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cultural-delights.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/delightful.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/enders-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ends-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/estrogen.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/even-more-origins-keybinds.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/figura.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-essentials.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ranks-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-mod.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-x-curios-api-compat.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/hexcasting.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/inline.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/irons-spells-n-spellbooks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/just-enough-resources-jer.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-mekanism-unofficial.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lootjs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/luckperms.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-bridges.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-doors.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-fences-and-walls.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-furniture.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-paintings.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-paths-and-pavings.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-roofs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-stairs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-trapdoors.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/macaws-windows.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-additions.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-generators.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-tools.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/miners-delight-plus.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/nethers-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/numismatics.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ob-aquamirae.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/obscure-api.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/oceans-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/origins-classes-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/origins-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/origins-plus-plus.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/packet-fixer.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/paucal.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/pehkui.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/quark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/selene.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage-in-motion.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/stitch.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supplementaries.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap-world-map-waystones-compability.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/zeta.pw.toml"
+metafile = true
+
+[[files]]
+file = "options.txt"

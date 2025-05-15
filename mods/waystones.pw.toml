@@ -1,0 +1,16 @@
+filename = 'waystones-forge-1.20.1-14.1.12.jar'
+name = 'Waystones'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'edb021ab1269ca612937426d9ed7843ae98b2c71'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6512148
+project-id = 245755

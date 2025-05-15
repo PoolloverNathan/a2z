@@ -1,0 +1,16 @@
+filename = 'culturaldelights-0.16.4.jar'
+name = 'Cultural Delights'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '5119c6bf2e1ed17b7005a9ebda097916a4398709'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6420879
+project-id = 574622

@@ -1,0 +1,16 @@
+filename = 'origins-forge-1.20.1-1.10.0.9-all.jar'
+name = 'Origins (Forge)'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '71af2b5fa4d2905ab71ca7c488a508dba277f109'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5314209
+project-id = 474438

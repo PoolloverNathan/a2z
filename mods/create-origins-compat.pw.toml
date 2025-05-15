@@ -1,0 +1,50 @@
+filename = 'Create-Origins-Compat-1.0.0.jar'
+name = 'Create Origins Compat'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [
+    '1.18',
+    '1.18-Snapshot',
+    '1.18.1',
+    '1.18.2',
+    '1.19',
+    '1.19-Snapshot',
+    '1.19.1',
+    '1.19.2',
+    '1.19.3',
+    '1.19.3-Snapshot',
+    '1.19.4',
+    '1.19.4-Snapshot',
+    '1.20',
+    '1.20-Snapshot',
+    '1.20.1',
+    '1.20.2',
+    '1.20.2-Snapshot',
+    '1.20.3',
+    '1.20.3-Snapshot',
+    '1.20.4',
+    '1.20.5',
+    '1.20.5-Snapshot',
+    '1.20.6',
+    '1.21',
+    '1.21-Snapshot',
+    '1.21.1',
+    '1.21.1-Snapshot',
+    '1.21.2',
+    '1.21.2-Snapshot',
+    '1.21.3',
+    '1.21.4',
+    '1.21.4-Snapshot',
+    '1.21.5-Snapshot'
+]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'f7607f19cba35376cdcddcf39f3f102cc722eabf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6227143
+project-id = 1206968

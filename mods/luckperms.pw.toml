@@ -1,0 +1,16 @@
+filename = 'LuckPerms-Forge-5.4.102.jar'
+name = 'LuckPerms'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '00597f94cd1f88a468202c1fa0495106f000d564'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4738950
+project-id = 431733
