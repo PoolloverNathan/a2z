@@ -5,9 +5,12 @@ volumes:
 
 services:
   server:
+    image: docker.pool.net.eu.org/a2z/server
     build: dedicated-server/
     init: true
     cpus: 3
+    tty: true
+    stdin_open: true
     ports:
-      - 39781:25565
-      - 42279:42279/udp
+      - 30024:25565
+      - 15352:15352/udp
