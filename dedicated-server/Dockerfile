@@ -1,6 +1,7 @@
 FROM alpine
 ADD https://git.sleeping.town/unascribed/unsup/releases/download/v1.0.2/unsup-1.0.2.jar /app/unsup.jar
 ADD unsup.ini /app/unsup.ini
+ADD start.sh /app/start.sh
 COPY --link --from=pack / /app/pack
 
 FROM amazoncorretto:21-alpine3.21
@@ -20,6 +21,6 @@ COPY --link --from=0 /app /app
 COPY --link --from=1 /app /mnt
 WORKDIR /mnt
 VOLUME /mnt
-ENTRYPOINT ["/mnt/run.sh"]
+ENTRYPOINT ["sh", "/app/start.sh"]
 EXPOSE 25565
 EXPOSE 23443/udp

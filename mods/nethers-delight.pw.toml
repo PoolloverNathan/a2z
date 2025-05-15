@@ -9,7 +9,6 @@ x-prismlauncher-release-type = 'release'
 hash = 'c6da9c681bf2ec1d7b3e96db739c2b1113f6b838'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
 
 [update.curseforge]
 file-id = 4736227
