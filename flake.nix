@@ -103,8 +103,8 @@
                   cachedVersion = "1.20.1";
                 }
                 {
-                  uid = "net.fabricmc.fabric-loader";
-                  version = pack.versions.fabric;
+                  uid = "net.minecraftforge";
+                  version = pack.versions.forge;
                   important = true;
                 }
                 {
