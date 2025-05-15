@@ -1,6 +1,9 @@
 hash-format = "sha256"
 
 [[files]]
+file = "icon.png"
+
+[[files]]
 file = "mods/altorigingui.pw.toml"
 metafile = true
 
