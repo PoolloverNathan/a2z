@@ -1,15 +1,13 @@
-filename = 'create-1.20.1-0.5.1.j.jar'
-name = 'Create'
-side = 'both'
-x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
-x-prismlauncher-mc-versions = [ '1.20.1' ]
-x-prismlauncher-release-type = 'release'
+name = "Create"
+filename = "create-1.20.1-6.0.4.jar"
+side = "both"
 
 [download]
-hash = 'fab2ae7fcf685b3875ca20022bfecf0d4fdafbf7'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
+url = "https://cdn.modrinth.com/data/LNytGWDc/versions/xoKzmnen/create-1.20.1-6.0.4.jar"
+hash-format = "sha512"
+hash = "9dc60349a07d3367977fc935a65053db63cdfab4fc244db06e97a62e9c9d1154c1b8b66d4083f5a4c4a1403716a06c3251cd8d0ddfccb5e9de7177c8c2c45d25"
 
-[update.curseforge]
-file-id = 5838779
-project-id = 328085
+[update]
+[update.modrinth]
+mod-id = "LNytGWDc"
+version = "xoKzmnen"
