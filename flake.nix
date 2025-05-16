@@ -122,7 +122,7 @@
       formatter.${pkgs.system} = pkgs.nixfmt-rfc-style;
       packages.${pkgs.system} = rec {
         prismPack = mkPrismPack "HEAD" (default + /pack.toml);
-        releasePrismPack = mkPrismPack "main" "https://poollovernathan.github.io/a2z-server/pack.toml";
+        releasePrismPack = mkPrismPack "main" "https://poollovernathan.github.io/a2z/pack.toml";
 
         default =
           pkgs.runCommand "pack"
