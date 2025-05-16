@@ -324,10 +324,6 @@ file = "mods/oceans-delight.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/origins-classes-forge.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/origins-forge.pw.toml"
 metafile = true
 
