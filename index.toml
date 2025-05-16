@@ -320,6 +320,10 @@ file = "mods/oceans-delight.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/open-loader.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/origins-forge.pw.toml"
 metafile = true
 
