@@ -1,0 +1,18 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "set_total",
+        "value": 0.01
+    },
+    "self_action": {
+        "type": "origins:execute_command",
+        "command": "damage @e[tag=natura,limit=1] 10 minecraft:player_attack"
+    },
+    "condition": {
+        "type": "origins:command",
+        "command": "execute if entity @e[tag = natura]",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "hidden": true
+}

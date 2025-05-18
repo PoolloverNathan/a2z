@@ -1,0 +1,14 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "forge:nametag_distance",
+        "value": -1,
+        "operation": "multiply_total"
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/loki_ring"
+    },
+    "hidden": true
+}

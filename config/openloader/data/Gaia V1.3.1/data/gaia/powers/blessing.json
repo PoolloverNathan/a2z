@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "botania:pixie_spawn_chance",
+        "value": 0.25,
+        "operation": "addition"
+    },
+    "name": "Fae's Blessing",
+    "description": "+25% chance to summon friendly pixies when hit."
+}

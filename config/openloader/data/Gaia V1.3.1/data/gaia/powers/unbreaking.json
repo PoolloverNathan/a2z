@@ -1,0 +1,45 @@
+{
+    "type": "apugli:modify_durability_change",
+    "comparisons": [
+        {
+            "comparison": "<",
+            "compare_to": 0
+        },
+        {
+            "comparison": "<=",
+            "compare_to": 0
+        }
+    ],
+    "modifier": {
+        "operation": "set_total",
+        "value": 0
+    },
+    "item_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "botania:mana_using_items"
+                }
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:relative_durability",
+                        "comparison": ">=",
+                        "compare_to": 0.9
+                    },
+                    {
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:unbreaking",
+                        "comparison": ">=",
+                        "compare_to": 3
+                    }
+                ]
+            }
+        ]
+    },
+    "hidden": true
+}

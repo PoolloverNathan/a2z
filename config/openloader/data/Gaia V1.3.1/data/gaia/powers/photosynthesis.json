@@ -1,0 +1,8 @@
+{
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:food"
+    },
+    "name": "Photosynthesis",
+    "description": "Can't eat anything aside from the Fruit of Grisaia. Hunger refills slowly in sunlight. When out of the sun, gain Slowness and Weakness II."
+}

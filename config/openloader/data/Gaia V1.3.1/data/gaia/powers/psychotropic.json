@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.5
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "botania:mana_using_items"
+                    }
+                }
+            },
+            {
+                "type": "origins:advancement",
+                "advancement": "botania:challenge/king_key"
+            }
+        ]
+    },
+    "hidden": true
+}

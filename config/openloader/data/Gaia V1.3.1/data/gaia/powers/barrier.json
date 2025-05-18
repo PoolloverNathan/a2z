@@ -1,0 +1,33 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -1
+    },
+    "attacker_action": {
+        "type": "origins:execute_command",
+        "command": "damage @s 3 minecraft:thorns by @p[tag=gaia]"
+    },
+    "self_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:item.shield.block"
+    },
+    "condition": {
+        "type": "origins:using_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": [
+                {
+                    "tag": "origins:shields"
+                },
+                {
+                    "tag": "forge:tools/shields"
+                },
+                {
+                    "tag": "spartanshields:shields_with_bash"
+                }
+            ]
+        }
+    },
+    "hidden": true
+}

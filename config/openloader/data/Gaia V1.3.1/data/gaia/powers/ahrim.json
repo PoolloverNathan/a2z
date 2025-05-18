@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:weakness",
+                "duration": 400,
+                "amplifier": 1
+            }
+        }
+    },
+    "name": "Will of Ahrim",
+    "description": "Through the Will of Ahrim, any enemies you hit are weakened."
+}

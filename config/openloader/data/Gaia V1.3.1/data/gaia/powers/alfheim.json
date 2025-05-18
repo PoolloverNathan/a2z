@@ -1,0 +1,21 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "attribute": "irons_spellbooks:nature_spell_power",
+            "value": 0.5,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:mana_regen",
+            "value": 0.5,
+            "operation": "multiply_total"
+        }
+    ],
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "mythicbotany:alfheim"
+    },
+	"interval": 10,
+    "hidden": true
+}

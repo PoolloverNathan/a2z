@@ -1,0 +1,32 @@
+{
+	"powers": [
+		"gaia:affinity",
+		"gaia:arithmetic",
+		"gaia:barrierb",
+		"gaia:blessing",
+		"gaia:dharok",
+		"gaia:gaia",
+		"gaia:gift",
+		"gaia:mana",
+		"gaia:name",
+		"gaia:natura",
+		"gaia:omen",
+		"gaia:prot",
+		"gaia:reservoirb",
+		"gaia:skies",
+		"gaia:sneak",
+		"gaia:soulscribe",
+		"gaia:terrablade",
+		"gaia:terrasteel",
+		"gaia:thundercaller",
+		"gaia:unbreaking",
+		"gaia:warden",
+		"gaia:yggdrasilsteel"
+	],
+	"icon": "botania:ancient_will_dharok",
+	"order": 10,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Pact of Gaia",
+	"description": "Gaia has granted you the Will of Dharok"
+}

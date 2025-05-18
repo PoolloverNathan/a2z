@@ -1,0 +1,29 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "devotion @s set eidolon:dark 0"
+            },
+            {
+                "type": "origins:drop_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": [
+                        {
+                            "item": "eidolon:unholy_symbol"
+                        },
+                        {
+                            "item": "minecraft:totem_of_undying"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "interval": 1,
+    "name": "Ill Omen",
+	"description": "Can't use anything related to illagers."
+}

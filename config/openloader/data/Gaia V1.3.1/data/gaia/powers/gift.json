@@ -1,0 +1,24 @@
+{
+    "type": "origins:modify_status_effect_duration",
+    "status_effects": [
+        "minecraft:blindness",
+        "minecraft:darkness",
+        "minecraft:glowing",
+        "minecraft:hunger",
+        "minecraft:levitation",
+        "minecraft:mining_fatigue",
+        "minecraft:nausea",
+        "minecraft:poison",
+        "minecraft:slow_falling",
+        "minecraft:slowness",
+        "minecraft:unluck",
+        "minecraft:weakness",
+        "minecraft:wither"
+    ],
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.25
+    },
+    "name": "Nature's Gift",
+    "description": "-25% duration on most negative effects."
+}

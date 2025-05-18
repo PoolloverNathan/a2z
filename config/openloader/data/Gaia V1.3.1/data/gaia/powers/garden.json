@@ -1,0 +1,229 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:endoflame"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:kekimurus"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:haste",
+                        "amplifier": 1,
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:munchdew"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:saturation",
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:rosa_arcana"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:add_xp",
+                    "points": 18
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:agricarnation"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:heal",
+                    "amount": 1
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:hopperhock"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "amplifier": 1,
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:rannuncarpus"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "botania:soul_cross",
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "botania:pure_daisy"
+                    },
+                    "radius": 24,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                "if_action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "amplifier": 1,
+                        "duration": 40,
+                        "is_ambient": true,
+                        "show_particles": false,
+                        "show_icon": true
+                    }
+                },
+                "else_action": {
+                    "type": "origins:nothing"
+                }
+            }
+        ]
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "botania:special_flowers"
+        },
+        "radius": 24,
+        "shape": "cube",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "name": "Garden of Yggdrasil",
+    "description": "Gain buffs depending on nearby Botania flowers. Only checks for a certain handful of special flowers."
+}

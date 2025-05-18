@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "irons_spellbooks:rend",
+                "duration": 100,
+                "amplifier": 19
+            }
+        }
+    },
+    "name": "Will of Verac",
+    "description": "Through the Will of Verac, any enemies you hit are made vulnerable."
+}

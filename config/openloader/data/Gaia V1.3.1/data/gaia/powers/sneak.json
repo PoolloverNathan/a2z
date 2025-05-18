@@ -1,0 +1,33 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.5
+    },
+    "self_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "botania:holy_cloak"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power remove @s gaia:arithmetic"
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 100,
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "power grant @s gaia:arithmetic"
+                }
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:power_active",
+        "power": "gaia:arithmetic"
+    },
+    "hidden": true
+}

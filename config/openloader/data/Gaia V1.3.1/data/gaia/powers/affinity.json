@@ -1,0 +1,26 @@
+{
+    "type": "origins:recipe",
+    "recipe": {
+        "id": "gaia:nature_affinity",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+            {
+                "item": "botania:black_shiny_flower"
+            },
+            {
+                "item": "botania:ender_air_bottle"
+            },
+            {
+                "item": "botania:ender_air_bottle"
+            },
+            {
+                "item": "botania:mana_powder"
+            }
+        ],
+        "result": {
+            "item": "botania:black_lotus"
+        }
+    },
+    "name": "Nature Affinity",
+    "description": "Increased effectiveness of Botania items. Many mana-using items have extra effects. For example: Rod of the Unstable Reservoir now creates a damaging AoE while channeling."
+}

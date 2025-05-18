@@ -1,0 +1,138 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:sneaking"
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:raycast",
+                            "distance": 48,
+                            "block": true,
+                            "entity": true,
+                            "shape_type": "visual",
+                            "fluid_handling": "none",
+                            "bientity_action": {
+                                "type": "origins:target_action",
+                                "action": {
+                                    "type": "origins:and",
+                                    "actions": [
+                                        {
+                                            "type": "origins:spawn_particles",
+                                            "particle": {
+                                                "type": "minecraft:block",
+                                                "params": "minecraft:dirt"
+                                            },
+                                            "count": 60,
+                                            "offset_y": 0,
+                                            "spread": {
+                                                "x": 2,
+                                                "y": 0,
+                                                "z": 2
+                                            }
+                                        },
+                                        {
+                                            "type": "origins:play_sound",
+                                            "sound": "botania:laputa_start",
+                                            "pitch": 0.5
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "damage @s 12 minecraft:player_attack by @p[tag=gaia]"
+                                        },
+                                        {
+                                            "type": "origins:execute_command",
+                                            "command": "tp @e[tag=!gaia,tag=!guardian,limit=1,sort=nearest] @e[tag=gaia,limit=1,sort=nearest]"
+                                        }
+                                    ]
+                                }
+                            },
+                            "command_step": 1
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:raycast",
+                            "distance": 48,
+                            "block": true,
+                            "entity": true,
+                            "shape_type": "visual",
+                            "fluid_handling": "none",
+                            "hit_action": {
+                                "type": "origins:delay",
+                                "ticks": 2,
+                                "action": {
+                                    "type": "origins:area_of_effect",
+                                    "radius": 4,
+                                    "shape": "sphere",
+                                    "bientity_action": {
+                                        "type": "origins:target_action",
+                                        "action": {
+                                            "type": "origins:execute_command",
+                                            "command": "damage @s 10 minecraft:player_attack by @p[tag=gaia]"
+                                        }
+                                    }
+                                }
+                            },
+                            "command_at_hit": "tp @s ~ ~0.1 ~",
+                            "command_step": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:block",
+                    "params": "minecraft:dirt"
+                },
+                "count": 60,
+                "offset_y": 0,
+                "spread": {
+                    "x": 2,
+                    "y": 0,
+                    "z": 2
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 10,
+                    "amplifier": 9,
+                    "is_ambient": false,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "botania:laputa_start",
+                "pitch": 0.5
+            }
+        ]
+    },
+    "cooldown": 80,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 4
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "condition": {
+        "type": "origins:on_block"
+    },
+    "name": "§6§nResurface",
+    "description": "Burrow beneath the ground, reappearing where you're looking and damaging entities. If sneaking, causes a single target to get pulled to you through the ground. Can only be used while grounded."
+}

@@ -1,0 +1,51 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "say The tranquility of this place seems a cynical lie."
+            },
+            {
+                "type": "origins:revoke_power",
+                "power": "gaia:decline",
+                "source": "apoli:command"
+            },
+            {
+                "type": "origins:revoke_power",
+                "power": "gaia:accepta",
+                "source": "apoli:command"
+            },
+			{
+                "type": "origins:revoke_power",
+                "power": "gaia:acceptb",
+                "source": "apoli:command"
+            },
+			{
+                "type": "origins:revoke_power",
+                "power": "gaia:acceptc",
+                "source": "apoli:command"
+            },
+			{
+                "type": "origins:revoke_power",
+                "power": "gaia:acceptd",
+                "source": "apoli:command"
+            },
+			{
+                "type": "origins:revoke_power",
+                "power": "gaia:accepte",
+                "source": "apoli:command"
+            },
+			{
+                "type": "origins:revoke_power",
+                "power": "gaia:acceptf",
+                "source": "apoli:command"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.sneak",
+        "continuous": false
+    }
+}

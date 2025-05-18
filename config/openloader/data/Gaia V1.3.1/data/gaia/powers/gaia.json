@@ -1,0 +1,53 @@
+{
+    "type": "origins:action_on_block_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:happy_villager"
+                },
+                "count": 16,
+                "spread": {
+                    "x": 3,
+                    "y": 3,
+                    "z": 3
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "summon silverfish ~ ~ ~ {Health:100,NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:[\"gaiap\"],Attributes:[{Name:\"generic.max_health\",Base:100f}]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "title @s actionbar [\"Gaia Pylon active!\"]"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "power grant @e[type=minecraft:silverfish,tag=gaiap] gaia:invis"
+            },
+			{
+                "type": "origins:execute_command",
+                "command": "power grant @e[type=minecraft:silverfish,tag=gaiap] gaia:prot"
+            }
+        ]
+    },
+    "block_condition": {
+        "type": "origins:block",
+        "block": "botania:gaia_pylon"
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "botania:dreamwood_wand"
+        }
+    },
+    "condition": {
+        "type": "origins:command",
+        "command": "execute if entity @e[type = minecraft:silverfish, distance = ..10]",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "hidden": true
+}

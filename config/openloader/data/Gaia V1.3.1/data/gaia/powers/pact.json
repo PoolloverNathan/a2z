@@ -1,0 +1,344 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_ahrim"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Ahrim. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well weakening enemies. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:accepta"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_dharok"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Dharok. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well as buffs that get stronger when your health is low. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:acceptb"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_guthan"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Guthan. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well as lifesteal. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:acceptc"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+			{
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_torag"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Torag. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well as slowing enemies. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:acceptd"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+			{
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_verac"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Verac. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well as negating your enemies' armor. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:accepte"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+			{
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "botania:ancient_will_karil"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=!gaia,tag=!guardian] Gaia offers you the Will of Karil. Accept it, and obtain one of Gaia's Wills as its Guardian. Decline, and risk offending the fae. (Press the Pick Block button to accept. Sneak to decline. This pact grants access to increased proficiency with all things Botania, as well as withering your enemies. However, you will become unable to use illager magic.)"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:acceptf"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @p[tag=!gaia,tag=!guardian] gaia:decline"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:babylon_spawn"
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking"
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:empty"
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "origin set @p[tag=guardian] origins:pact origins:empty"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "w @p[tag=guardian] The flowers wilt! The Pact of Gaia has been nullified."
+                        },
+                        {
+                            "type": "origins:delay",
+                            "ticks": 20,
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "tag @p[tag=guardian] remove guardian"
+                            }
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:black_lotus"
+                        }
+                    ]
+                }
+            },
+			{
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:sneaking",
+							"inverted": true
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:empty"
+                            }
+                        }
+                    ]
+                },
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "tp @p[tag=gaia] @e[tag=guardian,limit=1,sort=random]"
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "botania:black_lotus"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 14
+    },
+    "key": {
+        "key": "key.saveToolbarActivator"
+    },
+    "name": "§6§nPact of Gaia",
+    "description": "Offers the target a pact. If accepted, they gain some of your mastery over nature, but also Ill Omen. They also become unable to damage you. Activate while sneaking to nullify the nearest Pact of Gaia. Changes depending on which Will is consumed."
+}

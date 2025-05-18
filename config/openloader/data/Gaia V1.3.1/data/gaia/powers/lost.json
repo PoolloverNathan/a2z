@@ -1,0 +1,23 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+        {
+            "attribute": "minecraft:generic.attack_damage",
+            "value": -0.14,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "minecraft:generic.max_health",
+            "value": -0.14,
+            "operation": "multiply_total"
+        }
+    ],
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/flugel_eye",
+        "inverted": true
+    },
+    "name": "Lost Relics",
+    "description": "You start off with 1/6th the HP and damage of a Human. This can be increased back to normal by collecting the Gaia Guardian's relics. Collecting relics also unlocks new passive powers."
+}

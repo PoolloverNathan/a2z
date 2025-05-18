@@ -1,0 +1,36 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "if_action": {
+            "type": "origins:feed",
+            "food": 1,
+            "saturation": 1
+        },
+        "else_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:weakness",
+                    "amplifier": 1,
+                    "duration": 40,
+                    "is_ambient": false,
+                    "show_particles": false,
+                    "show_icon": true
+                },
+                {
+                    "effect": "minecraft:slowness",
+                    "duration": 40,
+                    "is_ambient": false,
+                    "show_particles": false,
+                    "show_icon": true
+                }
+            ]
+        }
+    },
+    "hidden": true
+}

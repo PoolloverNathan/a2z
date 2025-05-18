@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "fill ~-4 ~-1 ~-4 ~4 ~-1 ~4 minecraft:grass_block replace minecraft:dirt"
+    },
+    "interval": 10,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "botania:terraform_rod"
+            }
+        }
+    },
+    "hidden": true
+}

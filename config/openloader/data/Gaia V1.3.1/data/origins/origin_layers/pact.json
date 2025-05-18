@@ -1,0 +1,16 @@
+{
+    "replace": false,
+    "order": 999,
+    "enabled": false,
+    "name": "Pact",
+    "missing_name": "None",
+    "missing_description": "You currently don't have a pact.",
+    "origins": [
+        "gaia:ahrim",
+        "gaia:dharok",
+        "gaia:guthan",
+        "gaia:torag",
+        "gaia:verac",
+        "gaia:karil"
+    ]
+}

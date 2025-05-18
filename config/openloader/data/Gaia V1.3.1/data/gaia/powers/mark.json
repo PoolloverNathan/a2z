@@ -1,0 +1,70 @@
+{
+    "type": "origins:action_on_block_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:composter"
+                },
+                "count": 16,
+                "spread": {
+                    "x": 3,
+                    "y": 3,
+                    "z": 3
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:command",
+                    "command": "execute if entity @e[tag = flugel]",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "summon minecraft:silverfish ~ ~ ~ {Health:1024,NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:[\"flugel\"],Attributes:[{Name:\"generic.max_health\",Base:1024f}]}"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "title @s actionbar [\"Mark set!\"]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "power grant @e[type=minecraft:silverfish,tag=flugel] gaia:invis"
+                        },
+						{
+                            "type": "origins:execute_command",
+                            "command": "power grant @e[type=minecraft:silverfish,tag=flugel] gaia:prot"
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[tag=flugel]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "title @s actionbar [\"Mark removed\"]"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "botania:flugel_eye"
+        }
+    },
+    "hidden": true
+}

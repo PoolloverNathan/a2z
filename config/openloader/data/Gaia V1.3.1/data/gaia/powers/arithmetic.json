@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:advancement",
+                "advancement": "botania:challenge/loki_ring"
+            },
+            {
+                "type": "origins:sneaking"
+            }
+        ]
+    }
+}

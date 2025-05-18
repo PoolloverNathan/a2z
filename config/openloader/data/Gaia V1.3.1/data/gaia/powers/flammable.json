@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 4
+    },
+    "damage_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:is_fire"
+    },
+    "name": "Flammable",
+    "description": "Take 5x fire damage. -100% fire magic resistance."
+}

@@ -1,0 +1,14 @@
+{
+    "type": "apugli:mobs_ignore",
+    "mob_condition": {
+        "type": "origins:attribute",
+        "attribute": "minecraft:generic.max_health",
+        "comparison": "<",
+        "compare_to": 100
+    },
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/gaia_guardian_no_armor"
+    },
+    "hidden": true
+}

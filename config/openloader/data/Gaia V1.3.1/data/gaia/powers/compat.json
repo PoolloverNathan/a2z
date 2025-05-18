@@ -1,0 +1,37 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "alexscaves:bubbled",
+        "alexscaves:irradiated",
+        "alexscaves:stunned",
+        "alexscaves:sugar_rush",
+        "alexsmobs:debilitating_sting",
+        "alexsmobs:ender_flu",
+        "alexsmobs:exsanguination",
+        "alexsmobs:fear",
+        "alexsmobs:power_down",
+        "alexsmobs:sunbird_curse",
+        "attributeslib:bleeding",
+        "attributeslib:detonation",
+        "attributeslib:grievous",
+        "attributeslib:sundering",
+        "cataclysm:abyssal_burn",
+        "cataclysm:abyssal_curse",
+        "cataclysm:abyssal_fear",
+        "cataclysm:blazing_brand",
+        "cataclysm:bone_fracture",
+        "cataclysm:curse_of_desert",
+        "cataclysm:stun",
+        "eeeabsmobs:armor_lower_effect",
+        "eeeabsmobs:erode_effect",
+        "eeeabsmobs:vertigo_effect",
+        "mowziesmobs:frozen",
+        "simplyswords:pain",
+        "traveloptics:blackout"
+    ],
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/odin_ring"
+    },
+    "hidden": true
+}

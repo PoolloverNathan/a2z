@@ -1,0 +1,27 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.2
+    },
+    "target_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "irons_spellbooks:guided",
+            "duration": 500,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "botania:terra_sword"
+            }
+        }
+    },
+    "hidden": true
+}

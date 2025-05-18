@@ -1,0 +1,44 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "say Emptiness is the only defense against an assault on the mind."
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "tag @s add guardian"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:pact gaia:verac"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "botania:enchanter_form"
+            },
+            {
+                "type": "origins:revoke_power",
+                "power": "gaia:decline",
+                "source": "apoli:command"
+            },
+            {
+                "type": "origins:revoke_power",
+                "power": "gaia:accepte",
+                "source": "apoli:command"
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": {
+                    "type": "minecraft:composter"
+                },
+                "count": 40
+            }
+        ]
+    },
+    "key": {
+        "key": "key.pickItem"
+    }
+}

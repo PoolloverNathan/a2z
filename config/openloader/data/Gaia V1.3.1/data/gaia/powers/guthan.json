@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "self_action": {
+        "type": "origins:heal",
+        "amount": 2
+    },
+    "name": "Will of Guthan",
+    "description": "Through the Will of Guthan, you restore your health through any attack."
+}

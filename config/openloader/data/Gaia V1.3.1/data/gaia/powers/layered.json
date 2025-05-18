@@ -1,0 +1,25 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "self_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.player.attack.crit"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.5
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:advancement",
+                "advancement": "botania:challenge/thor_ring"
+            },
+            {
+                "type": "origins:predicate",
+                "predicate": "gaia:twenty"
+            }
+        ]
+    },
+    "hidden": true
+}

@@ -1,0 +1,30 @@
+{
+	"powers": [
+		"gaia:affinity",
+		"gaia:barrierb",
+		"gaia:blessing",
+		"gaia:gaia",
+		"gaia:gift",
+		"gaia:guthan",
+		"gaia:mana",
+		"gaia:memory",
+		"gaia:natura",
+		"gaia:omen",
+		"gaia:prot",
+		"gaia:reservoirb",
+		"gaia:skies",
+		"gaia:soulscribe",
+		"gaia:terrablade",
+		"gaia:terrasteel",
+		"gaia:thundercaller",
+		"gaia:unbreaking",
+		"gaia:warden",
+		"gaia:yggdrasilsteel"
+	],
+	"icon": "botania:ancient_will_guthan",
+	"order": 10,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Pact of Gaia",
+	"description": "Gaia has granted you the Will of Guthan"
+}

@@ -1,0 +1,25 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+		"irons_spellbooks:blight",
+        "irons_spellbooks:chilled",
+        "irons_spellbooks:guided",
+        "irons_spellbooks:rend",
+        "irons_spellbooks:slowed",
+        "minecraft:blindness",
+        "minecraft:darkness",
+        "minecraft:levitation",
+        "minecraft:mining_fatigue",
+        "minecraft:nausea",
+        "minecraft:poison",
+        "minecraft:slow_falling",
+        "minecraft:slowness",
+        "minecraft:unluck",
+        "minecraft:wither"
+    ],
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/odin_ring"
+    },
+    "hidden": true
+}

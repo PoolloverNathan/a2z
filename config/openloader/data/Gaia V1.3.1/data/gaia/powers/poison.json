@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "irons_spellbooks:blight",
+                "duration": 100,
+                "amplifier": 10
+            }
+        }
+    },
+    "condition": {
+        "type": "origins:advancement",
+        "advancement": "botania:challenge/gaia_guardian_no_armor"
+    },
+    "hidden": true
+}

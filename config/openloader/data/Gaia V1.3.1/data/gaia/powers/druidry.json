@@ -1,0 +1,67 @@
+{
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "irons_spellbooks:blood_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:eldritch_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:ender_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:evocation_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:fire_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:holy_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:ice_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:lightning_spell_power",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:nature_spell_power",
+            "value": 0.75,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:fire_magic_resist",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:mana_regen",
+            "value": 1,
+            "operation": "multiply_total"
+        },
+        {
+            "attribute": "irons_spellbooks:max_mana",
+            "value": 0.5,
+            "operation": "multiply_total"
+        }
+    ],
+    "name": "Druidry",
+    "description": "Can't use non-Nature magic, but increased Nature spell power and mana."
+}

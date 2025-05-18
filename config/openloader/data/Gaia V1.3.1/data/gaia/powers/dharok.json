@@ -1,0 +1,188 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:relative_health",
+                    "comparison": ">=",
+                    "compare_to": 0.9
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:relative_health",
+                    "comparison": ">=",
+                    "compare_to": 0.7
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 1,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "amplifier": 1,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "amplifier": 1,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:relative_health",
+                    "comparison": ">=",
+                    "compare_to": 0.5
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 2,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "amplifier": 2,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "amplifier": 2,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:relative_health",
+                    "comparison": ">=",
+                    "compare_to": 0.3
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 3,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "amplifier": 3,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "amplifier": 3,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:relative_health",
+                    "comparison": ">=",
+                    "compare_to": 0.1
+                },
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 4,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "amplifier": 4,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "amplifier": 4,
+                            "duration": 20,
+                            "is_ambient": false,
+                            "show_particles": false,
+                            "show_icon": true
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "interval": 5,
+    "name": "Will of Dharok",
+    "description": "Through the Will of Dharok, you regenerate and move faster as well as hit harder. Increases as health lowers."
+}
