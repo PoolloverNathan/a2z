@@ -2026,6 +2026,10 @@ file = "mods/miners-delight-plus.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/moreiotas.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/nethers-delight.pw.toml"
 metafile = true
 
@@ -2131,6 +2135,10 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/switchy.pw.toml"
 metafile = true
 
 [[files]]

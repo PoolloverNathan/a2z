@@ -8,6 +8,7 @@ services:
   server:
     image: docker.pool.net.eu.org/a2z/server
     build: dedicated-server/
+    restart: unless-stopped
     init: true
     cpus: 3
     tty: true
