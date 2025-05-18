@@ -748,234 +748,6 @@ file = "config/openloader/data/More CC Tweaks/data/createaddition/recipes/mixing
 file = "config/openloader/data/More CC Tweaks/pack.mcmeta"
 
 [[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/functions/earthquake_particles.mcfunction"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/functions/foliage_disguise.mcfunction"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/functions/wrath_break.mcfunction"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/functions/wrath_smash.mcfunction"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/acacia.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/acacia_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/azalea.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/azalea_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/bee_nest.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/beehive.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/beetroot.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/birch.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/birch_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/brown_mushroom.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/brown_mushroom_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/carrot.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/cherry.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/cherry_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/dark_oak.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/dark_oak_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/deadbush.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/deadbush_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/fern.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/glow_lichen.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/grass.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/grass_block.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/grass_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/hanging_roots.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/jungle.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/jungle_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/mangrove.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/mangrove_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/melon.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/melon_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/mycelium.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/nether_wart.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/oak.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/oak_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/podzol.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/potato.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/red_mushroom.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/red_mushroom_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/seagrass.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/spruce.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/spruce_silk.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/sweet_berries.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/vine.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/loot_tables/wheat.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/origins/naturespirit.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/axe_vulnerability.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/bee_friends.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/disguise.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/entangled.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/expert_harvester.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/flammable.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/forest_spawn.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/green_thumb.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/growing.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/heat_vulnerability.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/leafy_skin.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/nature_spirit.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/natures_calling.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/natures_wrath.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/overtime.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/photosynthesis.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/root_entanglement.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/vegetarian.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/vine_whip.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/powers/water_absorption.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/tags/blocks/break_fast.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/tags/blocks/fertilizable.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/tags/blocks/phaseable.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/naturespirit/tags/items/disguisable.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/data/origins/origin_layers/origin.json"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/pack.mcmeta"
-
-[[files]]
-file = "config/openloader/data/Nature_Spirit_v1.2/pack.png"
-
-[[files]]
 file = "config/openloader/data/Neoforged_Fox_V2_1.0.0/data/neoforged_fox/origins/neoforged_fox.json"
 
 [[files]]
@@ -1906,6 +1678,9 @@ file = "mods/guideme.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/hexal-forge-1.20.1-0.3.0-3-skyevg-unofficial_1.jar?ex=682b6ce0&is=682a1b60&hm=a1128b430ed7212b2e4248511023dd3c84fbf25d9ae57b20890a8be0baa76d3e"
+
+[[files]]
 file = "mods/hexcasting.pw.toml"
 metafile = true
 
@@ -2028,6 +1803,9 @@ metafile = true
 [[files]]
 file = "mods/moreiotas.pw.toml"
 metafile = true
+
+[[files]]
+file = "mods/nature-spirit-1.2.jar"
 
 [[files]]
 file = "mods/nethers-delight.pw.toml"
