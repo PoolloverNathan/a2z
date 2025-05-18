@@ -1562,6 +1562,10 @@ file = "mods/clumps.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/connector.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/copycats.pw.toml"
 metafile = true
 
@@ -1639,6 +1643,10 @@ metafile = true
 
 [[files]]
 file = "mods/figura.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/forgified-fabric-api.pw.toml"
 metafile = true
 
 [[files]]
