@@ -138,7 +138,7 @@
                 "compare_to": 2
             }
         },
-        "type": "origins:modify_enchantment_level",
+        "type": "apugli:modify_enchantment_level",
         "enchantment": "minecraft:depth_strider",
         "modifier": {
             "operation": "set_total",
