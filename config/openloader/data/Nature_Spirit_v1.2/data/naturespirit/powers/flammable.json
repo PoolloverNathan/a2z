@@ -1,0 +1,56 @@
+{
+    "name": "Flammable",
+    "description": "As a being made of wood, you are EXTREMELY flammable, taking quadruple damage from fire and fire will never naturally extinguish itself on you (mitigated by fire resistance). In addition, standing too close to lava will also catch you on fire. Watch out!",
+    "type": "origins:multiple",
+    "never_extinguish": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:set_on_fire",
+            "duration": 4
+        },
+        "cooldown": 1,
+        "damage_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_fire"
+        }
+    },
+    "catch_fire": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "radius": 1,
+                    "block_condition": {
+                        "type": "origins:fluid",
+                        "fluid_condition": {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:lava"
+                        }
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:set_on_fire",
+            "duration": 4
+        }
+    },
+    "damage_taken": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_fire"
+        },
+        "modifier": {
+            "value": 3,
+            "operation": "multiply_base"
+        }
+    }
+}

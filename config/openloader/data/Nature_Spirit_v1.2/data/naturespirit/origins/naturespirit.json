@@ -1,0 +1,27 @@
+{
+    "name": "Nature Spirit",
+    "description": "Benevolent spirits of the forests, Nature Spirits draw their strength and nutrients from water and sunlight. However, they are also known to be a fierce defender of the forests and their friends, being able to be aggressive whenever necessary.",
+    "powers": [
+        "naturespirit:photosynthesis",
+        "naturespirit:water_absorption",
+        "naturespirit:green_thumb",
+        "naturespirit:nature_spirit",
+        "naturespirit:disguise",
+        "naturespirit:expert_harvester",
+        "naturespirit:vine_whip",
+        "naturespirit:natures_calling",
+        "naturespirit:root_entanglement",
+        "naturespirit:natures_wrath",
+        "naturespirit:bee_friends",
+        "naturespirit:flammable",
+        "naturespirit:axe_vulnerability",
+        "naturespirit:heat_vulnerability",
+        "naturespirit:vegetarian",
+        "naturespirit:overtime",
+        "naturespirit:leafy_skin",
+        "naturespirit:forest_spawn"
+    ],
+    "icon": "minecraft:oak_sapling",
+    "order": 1,
+    "impact": 2
+}

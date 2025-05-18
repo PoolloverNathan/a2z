@@ -2,6 +2,7 @@ name: a2z
 
 volumes:
   world:
+  tmux:
 
 services:
   server:
@@ -13,6 +14,23 @@ services:
     stdin_open: true
     volumes:
       - world:/mnt
+      - tmux:/tmux
     ports:
       - 30024:25565
       - 15352:15352/udp
+
+  console:
+    image: docker.pool.net.eu.org/tmux
+    profiles:
+      - NEVER
+    volumes:
+      - tmux:/tmux
+    build:
+      context: /var/empty
+      dockerfile_inline: |
+        FROM alpine
+        RUN apk add tmux
+        VOLUME /tmux
+        ENV TMUX_TMPDIR=/tmux
+        ENTRYPOINT ["tmux"]
+        CMD ["a"]

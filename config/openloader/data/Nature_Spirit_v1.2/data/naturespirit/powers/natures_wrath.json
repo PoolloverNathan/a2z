@@ -1,0 +1,549 @@
+{
+    "name": "Nature's Wrath",
+    "description": "For a short period of time, you can unleash nature's wrath, significantly increasing your size, health, armor, speed, reach, knockback resistance, jump (while crouching), and damage. In addition, you can break blocks quicker, smash through blocks, smash the ground (while crouching), and take no fall damage. You are prevented from phasing down in this state. You can activate this in biomes that are not deserts or the nether (mitigated with fire resistance). This ability will be deactivated if you're on fire without fire resistance or enter the aforementioned biomes, and recharges slowly in forest biomes. Toggled with [Save Hotbar Activator] You can use 64 bone meal to instantly restore all your power.",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "start_value": 60,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 8
+        }
+    },
+    "reset_scale": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:power_active",
+                    "power": "naturespirit:natures_wrath_toggle"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:power_active",
+                    "power": "naturespirit:disguise_toggle"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset pehkui:width"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset pehkui:height"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale reset pehkui:reach"
+                }
+            ]
+        }
+    },
+    "size": {
+        "type": "origins:active_self",
+        "cooldown": 40,
+        "key": {
+            "key": "key.saveToolbarActivator"
+        },
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "title @s actionbar {\"text\": \"The power of nature flows through you...\", \"color\": \"green\"}"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "power grant @s naturespirit:growing"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "entity.warden.sonic_charge"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "item.bone_meal.use",
+                        "volume": 4
+                    },
+                    {
+                        "type": "origins:delay",
+                        "ticks": 32,
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "scale set pehkui:width 2"
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "scale set pehkui:height 2"
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "scale set pehkui:reach 2"
+                                },
+                                {
+                                    "type": "origins:play_sound",
+                                    "sound": "entity.warden.roar"
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "title @s actionbar {\"text\": \"Destroy.\", \"color\": \"red\"}"
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "power remove @s naturespirit:growing"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "scale reset"
+            }
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "retain_state": false,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:power_active",
+                    "power": "naturespirit:disguise_toggle"
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:in_tag",
+                                        "tag": "minecraft:is_nether"
+                                    },
+                                    {
+                                        "type": "origins:in_tag",
+                                        "tag": "minecraft:is_badlands"
+                                    },
+                                    {
+                                        "type": "origins:in_tag",
+                                        "tag": "minecraft:has_structure/desert_pyramid"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "inverted": true,
+                            "type": "origins:status_effect",
+                            "effect": "minecraft:fire_resistance"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "inverted": true,
+                            "type": "origins:on_fire"
+                        },
+                        {
+                            "type": "origins:status_effect",
+                            "effect": "minecraft:fire_resistance"
+                        }
+                    ]
+                }
+            ]
+        },
+        "key": {
+            "key": "key.saveToolbarActivator"
+        }
+    },
+    "bone_meal": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "mainhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:bone_meal"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:amount",
+                                        "compare_to": 64,
+                                        "comparison": ">="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:ingredient",
+                                        "ingredient": {
+                                            "item": "minecraft:bone_meal"
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:amount",
+                                        "compare_to": 64,
+                                        "comparison": ">="
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "<",
+                    "compare_to": 60
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:bone_meal"
+                            }
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "mainhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 64
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:equipped_item_action",
+                        "equipment_slot": "offhand",
+                        "action": {
+                            "type": "origins:consume",
+                            "amount": 64
+                        }
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "operation": "set",
+                    "change": 60,
+                    "resource": "*:*_resource"
+                }
+            ]
+        }
+    },
+    "drain_power": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:power",
+                    "power": "floran:growing"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        }
+    },
+    "smash": {
+        "type": "origins:action_over_time",
+        "interval": 15,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": 0.1,
+                            "offset_y": 0,
+                            "offset_z": 0.1
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "offset_x": -0.1,
+                            "offset_y": 0,
+                            "offset_z": -0.1
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function floran:wrath_smash"
+        }
+    },
+    "break": {
+        "type": "origins:action_on_block_break",
+        "only_when_harvested": false,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "block_condition": {
+            "type": "origins:movement_blocking"
+        },
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "function floran:wrath_break"
+        }
+    },
+    "break_speed": {
+        "type": "origins:modify_break_speed",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "modifier": {
+            "value": 2,
+            "operation": "multiply_base"
+        },
+        "only_when_harvested": false
+    },
+    "jump_height": {
+        "type": "origins:modify_jump",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        },
+        "modifier": {
+            "value": 2,
+            "operation": "multiply_base"
+        }
+    },
+    "ground_smash": {
+        "type": "origins:action_on_land",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_distance",
+                    "comparison": ">=",
+                    "compare_to": 7
+                },
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:area_of_effect",
+                    "radius": 8,
+                    "bientity_condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:living"
+                                },
+                                {
+                                    "type": "origins:on_block"
+                                }
+                            ]
+                        }
+                    },
+                    "bientity_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:damage",
+                                "amount": 10,
+                                "damage_type": "player_attack"
+                            },
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 1,
+                                "z": 0.5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Tags:[\"earth_particles\"]}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function naturespirit:earthquake_particles"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=earth_particles,limit=1,sort=nearest]"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.generic.explode"
+                }
+            ]
+        }
+    },
+    "attributes": {
+        "type": "origins:conditioned_attribute",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.max_health",
+                "value": 20,
+                "operation": "addition"
+            },
+            {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "value": 1,
+                "operation": "addition"
+            },
+            {
+                "attribute": "minecraft:generic.armor",
+                "value": 20,
+                "operation": "addition"
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "value": 6,
+                "operation": "addition"
+            },
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "value": 0.2,
+                "operation": "addition"
+            }
+        ]
+    },
+    "restore_power": {
+        "type": "origins:action_over_time",
+        "interval": 60,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:is_forest"
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:is_jungle"
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:is_taiga"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        }
+    }
+}

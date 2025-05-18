@@ -20,6 +20,10 @@ file = "mods/applied-mekanistics.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/apugli.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/aquaculture.pw.toml"
 metafile = true
 

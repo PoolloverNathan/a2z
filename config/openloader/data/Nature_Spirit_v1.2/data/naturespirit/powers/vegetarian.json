@@ -1,0 +1,8 @@
+{
+    "name": "Vegetarian",
+    "description": "As a nature spirit, you cannot feed on meat.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:meat"
+    }
+}

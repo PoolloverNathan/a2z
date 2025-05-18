@@ -1,0 +1,136 @@
+{
+    "name": "Vine Whip",
+    "description": "You can whip enemies from up to 30 blocks away while holding a vine in your hand every 3 seconds. Definitely not a pokemon reference.",
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.use"
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 22
+    },
+    "cooldown": 60,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:vine"
+                    }
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:vine"
+                    }
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 30,
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:swing_hand"
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "block.vine.break",
+                                "volume": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                            "type": "origins:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:on_fire"
+                                },
+                                {
+                                    "type": "origins:entity_type",
+                                    "entity_type": "minecraft:blaze"
+                                },
+                                {
+                                    "type": "origins:entity_type",
+                                    "entity_type": "minecraft:strider"
+                                },
+                                {
+                                    "type": "origins:entity_type",
+                                    "entity_type": "minecraft:magma_cube"
+                                }
+                            ]
+                        }
+                    },
+                    "if_action": {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "mainhand",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:vine"
+                                    }
+                                }
+                            },
+                            "if_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "mainhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            },
+                            "else_action": {
+                                "type": "origins:equipped_item_action",
+                                "equipment_slot": "offhand",
+                                "action": {
+                                    "type": "origins:consume",
+                                    "amount": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 10,
+                    "damage_type": "player_attack"
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "block.vine.break",
+                        "volume": 2
+                    }
+                }
+            ]
+        },
+        "command_along_ray": "particle minecraft:block minecraft:vine ~ ~ ~ 0 0 0 0.0 20"
+    }
+}
