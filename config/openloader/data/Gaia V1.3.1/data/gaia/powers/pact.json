@@ -276,7 +276,7 @@
                     "actions": [
                         {
                             "type": "origins:execute_command",
-                            "command": "origin set @p[tag=guardian] origins:pact origins:empty"
+                            "command": "origin set @p[tag=guardian] gaia:pact origins:empty"
                         },
                         {
                             "type": "origins:execute_command",

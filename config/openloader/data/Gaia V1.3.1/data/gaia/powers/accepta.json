@@ -13,7 +13,7 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "origin set @s origins:pact gaia:ahrim"
+                "command": "origin set @s gaia:pact gaia:ahrim"
             },
             {
                 "type": "origins:play_sound",
