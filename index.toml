@@ -2026,7 +2026,7 @@ file = "mods/guideme.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/hexal-forge-1.20.1-0.3.0-3-skyevg-unofficial_1.jar?ex=682b6ce0&is=682a1b60&hm=a1128b430ed7212b2e4248511023dd3c84fbf25d9ae57b20890a8be0baa76d3e"
+file = "mods/hexal-forge-1.20.1-0.3.0-3-skyevg-unofficial_1.jar"
 
 [[files]]
 file = "mods/hexcasting.pw.toml"
