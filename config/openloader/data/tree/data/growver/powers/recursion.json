@@ -1,0 +1,73 @@
+{
+	"name": "§aRecursive §aForest",
+	"description": "Players near you slowly share in your curse.",
+	"type": "origins:multiple",
+	"treeingstart1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 30,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s growver:forestifying",
+					"conditions": [
+						{
+							"type": "origins:power",
+							"power": "growver:forestified",
+							"inverted": true
+						},
+						{
+							"type": "origins:power",
+							"power": "growver:forestifying",
+							"inverted": true
+						},
+						{
+							"type": "origins:power",
+							"power": "growver:patientzero",
+							"inverted": true
+						}
+					]
+				}
+			}
+		},
+		"interval": 1
+	},
+	"recursing1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 30,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s growver:recursion",
+					"condition": {
+						"type": "origins:power",
+						"power": "growver:recursion",
+						"inverted": true
+					}
+				}
+			}
+		},
+		"interval": 1
+	},
+	"treeing1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 30,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:change_resource",
+					"resource": "growver:forestifying_sickening",
+					"change": 1
+				}
+			}
+		},
+		"interval": 60
+	}
+}

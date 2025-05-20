@@ -1,0 +1,272 @@
+{
+	"name": "§aForestifying",
+	"description": "You feel your body trying to root to the ground and turn to wood.",
+	"type": "origins:multiple",
+
+	"sickening": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 600,
+		"start value": 2
+	},
+
+	"curse_progress": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "power grant @s growver:forestified"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "growver:forestifying_sickening",
+			"comparison": "==",
+			"compare_to": 600
+		}, 
+		"interval": 1
+	},
+
+	"staving": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "growver:forestifying_sickening",
+			"change": -1
+		},
+		"interval": 30,
+		"condition": {
+			"type": "origins:moving"
+		}
+	},
+
+	"hardeningbark1": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "on_fire",
+			"inverted": true
+		},
+		"modifier": {
+			"name": "wooden endurance1",
+			"operation": "multiply_base_multiplicative",
+			"value": -0.2
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": ">",
+					"compare_to": 199
+				},
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": "<",
+					"compare_to": 400
+				}
+			]
+		}
+	},
+	"hardeningbark2": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "on_fire",
+			"inverted": true
+		},
+		"modifier": {
+			"name": "wooden endurance2",
+			"operation": "multiply_base_multiplicative",
+			"value": -0.4
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": ">",
+					"compare_to": 399
+				},
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": "<",
+					"compare_to": 500
+				}
+			]
+		}
+	},
+	"hardeningbark3": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "on_fire",
+			"inverted": true
+		},
+		"modifier": {
+			"name": "wooden endurance3",
+			"operation": "multiply_base_multiplicative",
+			"value": -0.6
+		},
+		"condition": {
+		"type": "resource",
+				"resource": "growver:forestifying_sickening",
+				"comparison": ">",
+				"compare_to": 499	
+		}
+	},
+	"flammable2": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "on_fire"
+		},
+		"modifier": {
+			"name": "wooden weakness",
+			"operation": "multiply_base_multiplicative",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": ">",
+					"compare_to": 399
+				},
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": "<",
+					"compare_to": 500
+				}
+			]
+		}
+	},
+	"flammable3": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "on_fire"
+		},
+		"modifier": {
+			"name": "wooden weakness",
+			"operation": "multiply_base_multiplicative",
+			"value": 1
+		},
+		"condition": {
+		"type": "resource",
+				"resource": "growver:forestifying_sickening",
+				"comparison": ">",
+				"compare_to": 499
+		}
+	},
+	"progressionremoval": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "power revoke @s growver:forestifying"
+		},
+		"condition": {
+			"type": "origins:power",
+			"power": "growver:forestified"
+		},
+		"interval": 5
+	},
+	"deathremoval": {
+		"type": "origins:action_on_death",
+		"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+			"type": "origins:execute_command",
+			"command": "power revoke @s growver:forestifying"
+		}
+		}
+	},
+	"rooting1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "slowness",
+				"amplifier": 0,
+				"duration": 6,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": ">",
+					"compare_to": 199
+				},
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": "<",
+					"compare_to": 400
+				}
+			]
+		}
+	},
+	"rooting2": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "slowness",
+				"amplifier": 1,
+				"duration": 6,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": ">",
+					"compare_to": 399
+				},
+				{
+					"type": "resource",
+					"resource": "growver:forestifying_sickening",
+					"comparison": "<",
+					"compare_to": 500
+				}
+			]
+		}
+	},	
+	"rooting3": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "slowness",
+				"amplifier": 2,
+				"duration": 6,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"interval": 5,
+		"condition": {
+		"type": "resource",
+				"resource": "growver:forestifying_sickening",
+				"comparison": ">",
+				"compare_to": 499
+			
+		}
+	}
+}

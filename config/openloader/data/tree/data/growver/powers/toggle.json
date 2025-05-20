@@ -1,0 +1,9 @@
+{
+    "name": "§cNo §cStomach",
+	"description": "You can't eat any food items.",
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "key.smoothCamera"
+    }
+}

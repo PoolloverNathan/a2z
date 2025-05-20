@@ -1,0 +1,124 @@
+{
+	"name": "§aGrowing §aForest",
+	"description": "Players on the island slowly also become trees when your buff radius is increased.",
+	"type": "origins:multiple",
+	"treeingstart1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 150,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s growver:forestifying",
+					"conditions": [
+						{
+							"type": "origins:power",
+							"power": "growver:forestified",
+							"inverted": true
+						},
+						{
+							"type": "origins:power",
+							"power": "growver:forestifying",
+							"inverted": true
+						},
+						{
+							"type": "origins:power",
+							"power": "growver:patientzero",
+							"inverted": true
+						}
+					]
+				}
+			}
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "growver:resource",
+			"comparison": ">=",
+			"compare_to": 6
+		}
+	},
+	"recursing1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 150,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s growver:recursion",
+					"condition": {
+						"type": "origins:power",
+						"power": "growver:recursion",
+						"inverted": true
+					}
+				}
+			}
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "growver:resource",
+			"comparison": ">=",
+			"compare_to": 6
+		}
+	},
+	"treeing1": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 150,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:change_resource",
+					"resource": "growver:forestifying_sickening",
+					"change": 1
+				}
+			}
+		},
+		"interval": 30,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "growver:resource",
+			"comparison": ">=",
+			"compare_to": 6
+		}
+	},
+	"nodamage": {
+		"type": "origins:invulnerability",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "on_fire",
+					"inverted": true
+				},
+				{
+					"type": "origins:resource",
+					"resource": "growver:resource",
+					"comparison": ">=",
+					"compare_to": 6
+				}
+			]
+		}
+	},
+	"moarreach": {
+		"type": "origins:action_over_time",
+		"action": {
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:reach 6"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "growver:resource",
+			"comparison": "==",
+			"compare_to": 5
+		},
+		"interval": 399
+	}
+}

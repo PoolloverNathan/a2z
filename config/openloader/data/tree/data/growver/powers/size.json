@@ -1,0 +1,17 @@
+{
+	"name": "§cSleeplees",
+	"description": "Since you're a tree you can't sleep.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 100,
+	"start_value": 0,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 11,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "growver:toggle"
+		}
+	}
+}

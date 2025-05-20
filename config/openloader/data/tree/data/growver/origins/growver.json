@@ -1,0 +1,28 @@
+{
+	"powers": [
+		"growver:body",
+		"growver:health",
+		"growver:giver",
+		"growver:photosynthesis",
+		"growver:nosleep",
+		"growver:planted",
+		"growver:planttoggle",
+		"growver:planttogglee",
+		"growver:resource",
+		"growver:resourcee",
+		"grover:rootperception",
+		"growver:size",
+		"growver:toggle",
+		"growver:axes",
+		"growver:axess",
+		"growver:beingused",
+		"growver:leaves",
+		"growver:leavess"
+		
+	],
+	"icon": "minecraft:dark_oak_sapling",
+	"order": 300,
+	"impact": 3,
+	"name": "Wood Elf",
+	"description": "Taking the name literally, you search to plant yourself as a tree in one spot and grow to provide great buffs to all around you.."
+}

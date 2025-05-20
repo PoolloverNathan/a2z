@@ -1,0 +1,51 @@
+{
+	"name": "§aHarvestable",
+	"description": "Other players can cut your leaves with shears for leaves and other items and prune you with axes for wood, being pruned with an axe will make you shrink.",
+	"type": "origins:resource",
+	"min": 0,
+	"max": 7,
+	"start_value": 7,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+		"bar_index": 24,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "growver:leaves",
+					"comparison": ">=",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:shears"
+						}
+					}
+				}
+			]
+		}
+	},
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "minecraft:textures/item/shears.png",
+			"text": "You can cut your own leaves by right clicking with shears on your offhand, this will give you leaves and something found on it."
+		},
+		{
+			"type": "origins:keybind",
+			"sprite": "minecraft:textures/item/iron_axe.png",
+			"text": "You can prune by right clicking with any axe in your offhand, this will hurt you, give you some wood and will make you shrink."
+		},
+		{
+			"type": "origins:keybind",
+			"sprite": "minecraft:textures/item/bone_meal.png",
+			"text": "You can be bone mealed by other players, this will heal you but will also make you grow."
+		}
+	]
+}

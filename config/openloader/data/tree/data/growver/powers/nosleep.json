@@ -1,0 +1,7 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You can't sleep.",
+	"set_spawn_point": true,
+    "name": "§cFlammable",
+	"description": "You take 2x more fire damage."
+}

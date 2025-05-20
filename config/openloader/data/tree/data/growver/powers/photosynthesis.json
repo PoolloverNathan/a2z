@@ -1,0 +1,22 @@
+{
+    "name": "§aPhotosynthesis",
+	"description": "You can slowly feed yourself from the sun.",
+        "type": "origins:action_over_time",
+        "entity_action": {
+          "type": "origins:feed",
+          "food": 1,
+          "saturation": 1
+        },
+        "interval": 220,
+        "condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:exposed_to_sky"
+            },
+            {
+              "type": "origins:daytime"
+            }
+          ]
+        }
+}

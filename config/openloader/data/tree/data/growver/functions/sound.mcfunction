@@ -1,0 +1,1 @@
+playsound minecraft:music.credits player @a[distance=..20] ~ ~ ~ 100 1

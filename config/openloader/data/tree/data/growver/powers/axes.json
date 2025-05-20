@@ -1,0 +1,29 @@
+{
+	"name": "Pruning",
+	"description": "Other players can cut off your wood with an axe to decrease your size.",
+	"type": "origins:resource",
+	"min": 0,
+	"max": 7,
+	"start_value": 7,
+	"hud_render": {
+		"should_render": false,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 11,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "growver:toggle"
+		}
+	},
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "minecraft:textures/item/barrier.png",
+			"text": "You can blacklist any entity preventing them from being affected by your buffs by attacking them or being attacked, you can forgive them by right clicking with an empty hand."
+		},
+		{
+			"type": "origins:keybind",
+			"sprite": "minecraft:textures/block/rooted_dirt.png",
+			"text": "There are 5 stages of root progression while planted, on stage 1 you will take 60% less damage instead of 40%, on stage 2 you will give saturation to everyone nearby, on stage 3 you will be able to sense entities with your roots making them glow for you, on stage 4 you will give experience to everyone nearby, finally on stage 5 you will give regeneration to everyone nearby."
+		}
+	]
+}
